@@ -1,4 +1,4 @@
-# Curso Python - Curso em Vídeo
+# 🐍 Curso Python - Curso em Vídeo
 
 ### Guardando Exercícios
 Este repositório tem como objetivo armazenar os exercícios feitos no Curso de Python ministrado pelo professor Gustavo Guanabara
