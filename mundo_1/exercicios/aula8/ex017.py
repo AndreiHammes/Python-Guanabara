@@ -7,4 +7,4 @@ cat_a = float(input('Digite o comprimento do cateto oposto: '))
 cat_b = float(input('Digite o comprimento do cateto adjecente: '))
 
 hipo = sqrt(cat_a ** 2 +  cat_b ** 2)
-print(f'O comprimento da hipotenua é: {hipo:.2f}')  
+print(f'O comprimento da hipotenua é: {hipo:.2f}')

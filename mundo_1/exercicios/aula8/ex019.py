@@ -8,7 +8,7 @@ aluno2 = input('Digite o nome do segundo aluno: ')
 aluno3 = input('Digite o nome do terceiro aluno: ')
 aluno4 = input('Digite o nome do quarto aluno: ')
 
-nomes = aluno1 + aluno2 + aluno3 + aluno4
+nomes = [aluno1, aluno2, aluno3, aluno4]
 
-sortear = random.shuffle(nomes)
-print(sortear)
+sortear = random.choice(nomes)
+print(f'O aluno escolhido foi: {sortear}')
