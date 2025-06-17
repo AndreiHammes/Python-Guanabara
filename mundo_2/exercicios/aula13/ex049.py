@@ -1,0 +1,1 @@
+# refaça o desafio 009, mostranso a tabuada de um número que o usuário escolher, só que agora utilizando laço for
