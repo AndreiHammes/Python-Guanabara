@@ -16,3 +16,5 @@ print(
     f'- Cosseno = {cosseno:.2f}\n'
     f'- Tangente = {tangente:.2f}'
 )
+
+
