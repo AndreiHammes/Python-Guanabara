@@ -3,8 +3,8 @@
 
 pesos = []
 for c in range(1,6):
-    peso = int(input('Digite seu peso: '))
+    peso = float(input('Digite seu peso: '))
     pesos.append(peso)
 
-print(f'O menor peso é: {min(pesos)}')
-print(f'O maior peso é: {max(pesos)}')
+print(f'O menor peso é: {min(pesos)}kg')
+print(f'O maior peso é: {max(pesos)}kg')
