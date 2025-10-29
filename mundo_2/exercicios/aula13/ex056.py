@@ -5,32 +5,36 @@
 
 idades = []
 nomes = []
-sexo_m = []
-sexo_f = []
-count = 0
-count_feminino = 0
-count_masculino = 0
-velho = ''
+soma_idades = 0 
+mulheres_jovens = 0 
+idade_homem_mais_velho = 0
+nome_homem_mais_velho = ''
 
-for i in range(1,5):
-    print(f'----- {i}a pessoa -----')
+for i in range(1, 5): 
+    print(f'----- {i}ª pessoa -----')
     nome = input('Digite o nome: ')
     idade = int(input('Digite a idade: '))
     sexo = input('Digite o sexo: [M/F] ')
 
+    soma_idades += idade
 
-    if sexo == 'F' and idade < 20:
-        sexo_f.append(sexo)
-        count_feminino +=1 
-    else:
-        sexo_m.append(sexo)
-        count_masculino += 1
+    if sexo in 'Ff':
+        if idade < 20:
+            mulheres_jovens += 1
+    
+    elif sexo in 'Mm':
+        if idade > idade_homem_mais_velho:
+            idade_homem_mais_velho = idade
+            nome_homem_mais_velho = nome
 
-        idades.append(idade)
-        count += idade
 
-media = count / 4
+media = soma_idades / 4
 
-print(f'A media das idades é: {media:.2f} ')
-print(f'A idade da pessoa mais velha é: {max(idades)} e se chama {velho}')
-print(f'Ao todo são {count_feminino} mulheres com menos de 20 anos')
+print(f'\nA média das idades é: {media:.2f}')
+
+if nome_homem_mais_velho:
+    print(f'O nome do homem mais velho é {nome_homem_mais_velho} com {idade_homem_mais_velho} anos.')
+else:
+    print('Não foi informado nenhum homem na lista.')
+    
+print(f'Ao todo são {mulheres_jovens} mulheres com menos de 20 anos.')
