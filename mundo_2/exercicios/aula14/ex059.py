@@ -31,6 +31,8 @@ while True:
         else:
             print(f'{valor2} é maior que {valor1}')
     elif valor == 4:
-        continue
+        print('Informe os números novamente:')
+        valor1 = int(input('Digite o primeiro valor: '))
+        valor2 = int(input('Digite o segundo valor: '))
     else:
         break
