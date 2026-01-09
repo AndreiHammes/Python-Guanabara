@@ -10,7 +10,7 @@ termo_atual = 0
 total = 10
 
 while True:
-    for _ in range(total):
+    for i in range(total):
         termo_atual = termo + (count - 1) * razao
         print(f'{count}º termo: {termo_atual}')
         count += 1
