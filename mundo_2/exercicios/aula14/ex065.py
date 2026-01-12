@@ -12,11 +12,15 @@ while True:
         break
     numero.append(numeros)
     quantidade = quantidade + 1
-    soma_numeros = len(numero)
+    soma_numeros = sum(numero)
     media = soma_numeros / quantidade
+    escolha = input('Você deseja continuar digitando valores? [S/N]').upper()
+    if escolha == 'S':
+        continue
+    else:
+        break
+
 
 print(f"A média entre todos os valores é: {media}")
 print(f'O maior valor lido foi {max(numero)} e o menor foi {min(numero)}')
-escolha = input('Você deseja continuar digitando valores? [S/N]').upper()
 
-# TERMINAR DE FAZER ESSA ATIVIDADE
