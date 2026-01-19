@@ -3,6 +3,8 @@
 # Ex- Quer ver a tabuada de qual valor? > mostra a tabuada inteira dessa valor
 
 while True:
-    numero = int(input('Quer ver a tabuada de qual valor? (Digite um número negativo para sair)'))
+    numero = int(input('Quer ver a tabuada de qual valor? (Digite um número negativo para sair) '))
+    if numero < 0:
+        break
     for i in range(1,11):
         print(f'{numero} X {i} = {numero * i}')

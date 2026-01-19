@@ -6,8 +6,6 @@ vitorias = 0
 import random
 valor_computador = random.choice(numeros)
 
-
-
 print('VAMOS JOGAR PAR OU ÍMPAR!')
 
 while True:
@@ -15,17 +13,19 @@ while True:
     escolha = input('Par ou ímpar? [P/I] ').upper()
     print(f'Você jogou {valor} e o computador {valor_computador}')
 
-    if (valor + valor_computador) % 2 == 0 and escolha == 'P':    
-        print(f'total de {valor + valor_computador} deu PAR, VOCÊ GANHOU!')
+    total = valor + valor_computador
+
+    if (total) % 2 == 0 and escolha == 'P':    
+        print(f'total de {total} deu PAR, VOCÊ GANHOU!')
         vitorias += 1
-    elif (valor + valor_computador) % 2 == 0 and escolha == 'I':
-        print(f'total de {valor + valor_computador} deu PAR, VOCÊ PERDEU')
+    elif (total) % 2 == 0 and escolha == 'I':
+        print(f'total de {total} deu PAR, VOCÊ PERDEU')
         break
-    elif (valor + valor_computador) % 2 == 1 and escolha == 'P':    
-        print(f'total de {valor + valor_computador} deu ÍMPAR, VOCÊ PERDEU!')
+    elif (total) % 2 == 1 and escolha == 'P':    
+        print(f'total de {total} deu ÍMPAR, VOCÊ PERDEU!')
         break
-    elif (valor + valor_computador) % 2 == 1 and escolha == 'I':
-        print(f'total de {valor + valor_computador} deu ÍMPAR, VOCÊ GANHOU')
+    elif (total) % 2 == 1 and escolha == 'I':
+        print(f'total de {total} deu ÍMPAR, VOCÊ GANHOU')
         vitorias += 1
     
 print(f'GAME OVER, você ganhou {vitorias} vezes')
