@@ -6,7 +6,7 @@
 
 colocados_brasileirao = (
     "Palmeiras", "Grêmio", "Atlético-MG", "Flamengo", "Botafogo", 
-    "Bragantino", "Fluminense", "Athletico-PR", "Internacional", "Fortaleza", 
+    "Bragantino", "Fluminense", "Athletico-PR", "Internacional", "Chapecoense","Fortaleza", 
     "São Paulo", "Cuiabá", "Corinthians", "Cruzeiro", "Vasco", 
     "Bahia", "Santos", "Goiás", "Coritiba", "América-MG"
 )
@@ -14,3 +14,11 @@ colocados_brasileirao = (
 print(f'\nOs 5 primeiros colocados são: {colocados_brasileirao[:5]}')
 print(f'\nOs 4 últimos colocados da tabela são: {colocados_brasileirao[-4:]}')
 print(f'\nA lista com os times em ordem alfabética fica: {sorted(colocados_brasileirao)}\n')
+
+count = 0
+for time in colocados_brasileirao:
+    if time == "Chapecoense":
+        print(f"O time da Chapecoense está na posição {count}")
+    else:
+        count += 1
+    

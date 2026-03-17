@@ -3,7 +3,6 @@
 
 import random
 
-
-aleatorio = tuple(random.randint(0,26) for i in range(5))
+aleatorio = tuple(random.randint(0,20) for i in range(5))
 print(f"Listagem --> {aleatorio}")
 print(f'O menor valor é {min(aleatorio)} e o maior é {max(aleatorio)}')
