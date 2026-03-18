@@ -1,2 +1,6 @@
 # Crie um programa que tenha uma tupla com várias palavaras (sem acentos). Depois disso, mostrar para cada palavra, quais são as suas vogais
 
+vogais = ('a', 'e', 'i', 'o', 'u')
+palavras = ('Computador', 'Mouse', 'Teclado', 'Monitor', 'ccccc')
+
+

@@ -4,6 +4,8 @@
 # uma lista com os times em ordem alfabética
 # em que posição na tabela está o time da Chapecoense
 
+count = 0
+
 colocados_brasileirao = (
     "Palmeiras", "Grêmio", "Atlético-MG", "Flamengo", "Botafogo", 
     "Bragantino", "Fluminense", "Athletico-PR", "Internacional", "Chapecoense","Fortaleza", 
@@ -18,7 +20,7 @@ print(f'\nA lista com os times em ordem alfabética fica: {sorted(colocados_bras
 count = 0
 for time in colocados_brasileirao:
     if time == "Chapecoense":
-        print(f"O time da Chapecoense está na posição {count}")
+        print(f"O time da Chapecoense está na {count + 1}a posição")
     else:
         count += 1
     
