@@ -15,6 +15,8 @@ print(f'O número 9 apareceu {numeros.count(9)} vezes')
 
 if 3 in numeros:
     print(f'O primeiro número 3 apareceu na posição {numeros.index(3)+1}')
+else:
+    print('Não foram digitados valores de número 3')
 
 for i in numeros:
     if numeros.index(i) % 2 == 0:
