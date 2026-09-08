@@ -3,13 +3,18 @@
 
 numeros = []
 
-
-for i in range(1,6):
+for i in range(0, 5):
     valor = int(input(f'Digite o {i} valor: '))
-    numeros.append(valor)
-    if valor >= 0:
-        print(f'Valor adicionado ao final da lista...')
+    if i == 0 or valor > numeros[-1]:
+        numeros.append(valor)
+        print("Adicionado ao final da lista...")
+    else:
+        pos = 0
+        while pos < len(numeros):
+            if valor <= numeros[pos]:
+                numeros.insert(pos, valor)
+                print(f"Adicionado  na posição {pos} da lista")
+                break
+            pos += 1
 
-
-
-
+print(f"Os valores digitados em ordem foram: {numeros}")

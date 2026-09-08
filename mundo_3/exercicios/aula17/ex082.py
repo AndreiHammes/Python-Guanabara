@@ -11,8 +11,8 @@ par = []
 impar = []
 
 while True:
+    
     valor = int(input('Digite um valor: '))
-
     lista.append(valor)
 
     escolha = input('Quer continuar? [S/N] ').upper()

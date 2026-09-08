@@ -9,15 +9,12 @@
 
 # quando dizemos que b = a, estamos fazendo uma extensão do svalores e não copiando, se quisermos copiar usamos b = a[:]
 
-
-
-
 # Faça um programa que leia 5 valores numéricos e guarde-os em uma lista, no final mostre qual foi o maior e o menor valor digitado e as respectivas posições na lista
 
 lista = []
 
 for i in range(1,6):
-    valores = input(f'Digite um valor par a posição {i}: ')
+    valores = input(f'Digite um valor para a posição {i}: ')
     lista.append(valores)
 
 print(f'A lista ficou -> {lista}')
